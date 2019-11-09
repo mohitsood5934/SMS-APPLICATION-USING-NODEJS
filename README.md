@@ -16,4 +16,38 @@ SMS Application is designed using Node.js,Express.js,MongoDB .Nexmo API is used 
 
 
 **My Application**
+ - Home Page
 
+![image](https://user-images.githubusercontent.com/26309496/68532043-19dda300-033f-11ea-834d-5d3cbd37e758.png)
+
+-Register Page
+
+![image](https://user-images.githubusercontent.com/26309496/68532084-72ad3b80-033f-11ea-9d1b-23c1c45f6fb6.png)
+
+-Fill the registration form
+
+![image](https://user-images.githubusercontent.com/26309496/68532108-a5573400-033f-11ea-8170-c2b712e5b694.png)
+
+- Your details will be saved in the database.I have used mLAB as a cloud database service.It provides us the set of tools to host MongoDB database.
+
+-Our details are now stored in database 
+![image](https://user-images.githubusercontent.com/26309496/68532157-1dbdf500-0340-11ea-9611-a046afb0ac14.png)
+
+-Now we can login in to the application 
+![image](https://user-images.githubusercontent.com/26309496/68532176-4645ef00-0340-11ea-812f-675d70bbc176.png)
+
+-Now we can enter the mobile number to which we want to send SMS ,keep in mind that the number should be registered with the Nexmo,only then we will be able to send SMS to it.It will charge us few rupees to send SMS but we are using Nexmo API for only testing purpose so cost would be very less.Nexmo gives you 2 Euros when you first use their service .I am making good use of it :)
+
+![image](https://user-images.githubusercontent.com/26309496/68532232-cf5d2600-0340-11ea-9d93-84cb9c23774a.png)
+
+![image](https://user-images.githubusercontent.com/26309496/68532290-7b067600-0341-11ea-9ee4-a63f3f134af4.png)
+
+-Message is sent to your phone:
+![image](https://user-images.githubusercontent.com/26309496/68532309-b99c3080-0341-11ea-8e28-8e0937447d37.png)
+
+
+Thanks
+Mohit Sood
+
+
+-All client secrets and API keys are random strings in the code, generate your own key and secret. 
