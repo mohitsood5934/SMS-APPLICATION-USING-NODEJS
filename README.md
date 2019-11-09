@@ -40,7 +40,7 @@ SMS Application is designed using Node.js,Express.js,MongoDB .Nexmo API is used 
 
 ![image](https://user-images.githubusercontent.com/26309496/68532232-cf5d2600-0340-11ea-9d93-84cb9c23774a.png)
 
-![image](https://user-images.githubusercontent.com/26309496/68532290-7b067600-0341-11ea-9ee4-a63f3f134af4.png)
+![image](https://user-images.githubusercontent.com/26309496/68532662-4e089200-0346-11ea-81b1-8c67c04cca28.png)
 
 -Message is sent to your phone:
 ![image](https://user-images.githubusercontent.com/26309496/68532642-02ee7f00-0346-11ea-8d00-613589dd70d2.png)
