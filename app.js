@@ -14,8 +14,8 @@ const Nexmo = require("nexmo");
 //init nexmo
 const nexmo = new Nexmo({
 
-apiKey: '0583e0ae ',
-apiSecret :'CXOd9a3RdlhAFugi '
+apiKey: 'your-nexmo-api-key-should-be-here ',
+apiSecret :'secret-goes-here '
 
 },{debug: true});//debug is set to true
 
@@ -59,7 +59,7 @@ app.use(flash());
  //database connection setup
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://ramsham:ramsham123@ds129098.mlab.com:29098/smsapp",{ useNewUrlParser: true ,useUnifiedTopology:true})
+mongoose.connect("mongodb://your-username:your-password@ds129098.mlab.com:29098/smsapp",{ useNewUrlParser: true ,useUnifiedTopology:true})
 .then(() => console.log('connection successful'))
 .catch((err) => console.log(err));
 
