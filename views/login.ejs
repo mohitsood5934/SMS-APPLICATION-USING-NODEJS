@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf 8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>Login</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     
+     
+    <style type="text/css">
+       #nav
+      {
+        background-color: black;
+
+      }
+      a:hover
+      {
+        background-color: black;
+      }
+      html,body
+      {
+        height: 100%;
+      }
+      #img
+      {
+        height:100px;
+        width:100px;
+        border-radius: 50%
+      }
+     
+      body
+      {
+        position: relative;
+        font-size: 100%;
+        line-height: 1.5em;
+
+      }  
+     
+      #banner
+      {
+        height: 100%;
+        background: url('banner1.jfif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        position: relative;
+        opacity: 1.5;
+
+      }
+  #name
+      {
+        width:50%;
+      }
+      #psd
+      {
+        width:50%;
+      }
+      #login
+      {
+        position: relative;
+        margin-left: 450px;
+        margin-top: 50px;
+        
+
+      }
+      #button
+      {
+        margin-left: 2px;
+        width:50%;
+        border-radius: 10px;
+      }
+#logo
+{
+  padding-left: 100px;
+  position: relative;
+}
+ 
+
+
+  </style>
+
+     </head>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+     <body  data-spy="scroll" data-target=".navbar" data-offset="60">
+      <section id="banner" class="banner">
+        <div class="bg-color">
+          <nav class="navbar navbar-toggleable-sm bg-dark navbar-inverse fixed-top">
+            <div class="container">
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav">
+                  <a class="navbar-brand" href="#"><img src="logo.png" class="img-responsive" height="50" width="50"></a></div>
+                  <% if (user) { %>
+                  <a class="nav-item nav-link active" href="/logout"><span style="color:white">Logout</span></a>
+                   <% } else { %>
+                   <a class="nav-item nav-link active" href="/login"><span style="color:white">Login</span></a>
+                    <% } %>
+                    <a class="nav-item nav-link active" href="/signup"><span style="color:white">Signup</span></a>
+                     <a class="nav-item nav-link active" href="/home"><span style="color:white">Home</span></a>
+                   </div>
+                 </div>
+               </div>
+             </nav>
+             <br>
+             <br>
+              <div id="login">
+                <img src="logo.png" class="img-responsive" height="250" width="330" id="logo"></a>
+                <br>
+                <br>
+                <form action="/login" method="post" role="form" class="loginForm">
+                  <div class="form-group">
+                    <input type="text" class="form-control br-radius-zero" name="username" placeholder="Enter  your UserName:" id="name">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control br-radius-zero" placeholder="Enter  your Password:" name="password" id="psd">
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="button" value="Login">Login</button>
+                </form>
+              </div>
+            </body>
+          </head>
+          </html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf 8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+     
+     
+    <style type="text/css">
+       #nav
+      {
+        background-color: black;
+
+      }
+      #one
+      {
+        margin-top: 40px;
+        margin-left:450px;
+      }
+      a:hover
+      {
+        background-color: black;
+      }
+      html,body
+      {
+        height: 100%;
+      }
+      #img
+      {
+        height:80px;
+        width:100px;
+        border-radius: 50%
+      }
+     
+      body
+      {
+        position: relative;
+        font-size: 100%;
+        line-height: 1.5em;
+
+      }  
+     
+      #banner
+      {
+        height: 100%;
+        background: url('banner1.jfif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        position: relative;
+        opacity: 1.5;
+
+      }
+ 
+     
+      #button
+      {
+        margin-left: 2px;
+        width:30%;
+        border-radius: 10px;
+        background-color: black;
+      }
+
+#n,#na,#p,#e
+{
+  width:50%;
+}
+ #number,#msg
+ {
+  width: 30%;
+ }
+ #mob
+ {
+  padding-left: 70px;
+ }
+</style>
+ </head>
+ <body  data-spy="scroll" data-target=".navbar" data-offset="60">
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-toggleable-sm bg-dark navbar-inverse fixed-top">
+        <div class="container">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav">
+              <a class="navbar-brand" href="#"><img src="logo.png" class="img-responsive" height="50" width="50"></a></div>
+              <% if (user) { %>
+              <a class="nav-item nav-link active" href="/logout"><span style="color:white">Logout</span></a>
+              <% } else { %>
+              <a class="nav-item nav-link active" href="/login"><span style="color:white">Login</span></a>
+              <% } %>
+              <a class="nav-item nav-link active" href="/home"><span style="color:white">Home</span></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <title>Node SMS Texting</title>
+    </head>
+    <body>
+      <div class="container" id="one">
+        <img src="s.png" class="img-responsive" height="250" width="350" id="mob"><br>
+        <h6><span style="color:black;">Number begins with a country code</span></h6>
+        <input type="tel" name="number" id="number" placeholder="Enter Phone Number..."><br><br>
+         <input type="text" name="msg" id="msg" placeholder="Enter Text Message..."><br><br>
+         <button type="button" id="button"  class="button button-primary"><span style="color:white">Send Message</span></button>
+          <p class="response"><span style="color:white";></span></p>
+        </div>
+        <script src="/socket.io/socket.io.js">
+          
+        </script>
+        <script src="/js/main.js"></script>
+      </body>
+      </html>
