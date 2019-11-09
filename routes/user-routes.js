@@ -6,8 +6,8 @@ const router = require("express").Router();
 const io = require("socket.io");
 const Nexmo = require("nexmo");
 const nexmo = new Nexmo({
-apiKey: '0583e0ae ',
-apiSecret :'CXOd9a3RdlhAFugi '
+apiKey: 'your-API-key ',
+apiSecret :'your-secret '
 
 },{debug: true});
 
@@ -125,7 +125,7 @@ router.post('/index',function(req,res){
 const number = req.body.number;
 const text = req.body.text;
  nexmo.message.sendSms(
-    '8219153828', number, text, { type: 'unicode' },
+    '82191*****', number, text, { type: 'unicode' },
     (err, responseData) => {
       if(err) {
         console.log(err);
