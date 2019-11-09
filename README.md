@@ -43,7 +43,7 @@ SMS Application is designed using Node.js,Express.js,MongoDB .Nexmo API is used 
 ![image](https://user-images.githubusercontent.com/26309496/68532290-7b067600-0341-11ea-9ee4-a63f3f134af4.png)
 
 -Message is sent to your phone:
-![image](https://user-images.githubusercontent.com/26309496/68532309-b99c3080-0341-11ea-8e28-8e0937447d37.png)
+![image](https://user-images.githubusercontent.com/26309496/68532642-02ee7f00-0346-11ea-8d00-613589dd70d2.png)
 
 
 Thanks
